@@ -1,0 +1,38 @@
+body {
+     padding-left: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
+    background-image: url("/public/css/backgroung.jpeg");
+
+}
+h1{
+    font-weight: bolder;
+    padding-top: 5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+input{
+    margin-top: 10rem;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #5f9341;
+  
+}
+
+#buttons{
+    margin: 2rem;
+    align-items: center;
+
+}
+
+button{
+    margin: 25px;
+    background-color: #5f9341;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid #5f9341;
+    font-weight: bold;
+}

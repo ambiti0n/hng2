@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/hng.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body><nav class="navbar navbar-expand-lg  ftco-navbar-light">
+    <div class="container-xl">
+    <a class="navbar-brand" href="#">
+        <img src="public/css/logo.png" alt="logo" width="100px" height="50px" >
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </button>
+    </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <div class=" justify-content-center row">
+            <div class="col-md-8">
+
+                <h1 class="text-center"> Profile Data Form </h1>
+                {{msg}}
+                <form method="POST"  id="myForm" action="send">
+                 
+                    <p><input placeholder="FULL NAME" required type="text" id="fullName" name ="name"></p>
+                   <p> <input placeholder="ROLE" required type="text" name="role"></p>
+                   <p> <input placeholder="SKILLS 🧑‍💻" required type="text" name="skill"></p>
+                    <p><input placeholder="CERTIFICATIONS" required type="text" name="cert"></p>
+                   <p> <input placeholder="EDUCATION 🎓" required type="text" name="edu"></p>
+                
+                    <div class="text-center" id="buttons">
+                        <button  type="submit" > SEND DATA TO SERVER</button>
+                    </div>
+                    <div class="text-center" id="buttons">
+                        <button  onclick="myFunction()" > CLEAR INPUT FIELD</button>
+                    </div>
+                </form>
+            </div>
+         </div>      
+    </div>
+
+<script>
+function myFunction() {
+  document.getElementById("myForm").reset();
+}
+</script>
+</body>
+</html>
