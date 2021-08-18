@@ -1,13 +1,14 @@
- // A function that prints my name using a language of choice(javascript)
+ 
+ // A function that prints my name using my language of choice(javascript)
 function printName(){
-       let firstName = "Johnson"
-       let lastName = "Afuye"
-       console.log(firstName+" "+ lastName);      
+    let firstName = "Johnson"
+    let lastName = "Afuye"
+    console.log(firstName+" "+ lastName);      
 }
 printName();
 
-
-const express = require("express");
+ 
+ const express = require("express");
  const bodyParser = require("body-parser");
  const exphbs = require("express-handlebars");
  const path = require("path");
@@ -29,8 +30,9 @@ const express = require("express");
 
  app.post("/send", (req,res) => {
      console.log(req.body)
-     res.send("<h1> The Profile data from the Form input was successfully sent to the Server</h1>");
+     res.send("<h2> Thank you for submitting, the contact form response has been sent to the server.</h2>")
  })
+
 
  const PORT = process.env.PORT || 5001;
 
