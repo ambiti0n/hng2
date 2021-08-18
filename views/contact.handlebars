@@ -23,21 +23,17 @@
         <div class=" justify-content-center row">
             <div class="col-md-8">
 
-                <h1 class="text-center"> Profile Data Form </h1>
-                {{msg}}
+                <h1 class="text-center"> CONTACT FORM </h1>
                 <form method="POST"  id="myForm" action="send">
                  
-                    <p><input placeholder="FULL NAME" required type="text" id="fullName" name ="name"></p>
-                   <p> <input placeholder="ROLE" required type="text" name="role"></p>
-                   <p> <input placeholder="SKILLS 🧑‍💻" required type="text" name="skill"></p>
-                    <p><input placeholder="CERTIFICATIONS" required type="text" name="cert"></p>
-                   <p> <input placeholder="EDUCATION 🎓" required type="text" name="edu"></p>
+                    <p><input placeholder="Name" required type="text" name ="name"></p>
+                   <p> <input placeholder="Email" required type="email" name="email"></p>
+                   <p> <input placeholder="Phone" required type="text" name="Phone"></p>
+                    <p><input placeholder="Subject" required type="text" name="subject"></p>
+                    <textarea placeholder="Message" required type="text-area" name="messsage"></textarea>
                 
                     <div class="text-center" id="buttons">
-                        <button  type="submit" > SEND DATA TO SERVER</button>
-                    </div>
-                    <div class="text-center" id="buttons">
-                        <button  onclick="myFunction()" > CLEAR INPUT FIELD</button>
+                        <button  type="submit" > SEND MESSAGE</button>
                     </div>
                 </form>
             </div>
@@ -45,9 +41,6 @@
     </div>
 
 <script>
-function myFunction() {
-  document.getElementById("myForm").reset();
-}
 </script>
 </body>
 </html>
