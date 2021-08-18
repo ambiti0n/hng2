@@ -1,4 +1,13 @@
- const express = require("express");
+ // A function that prints my name using a language of choice(javascript)
+function printName(){
+       let firstName = "Johnson"
+       let lastName = "Afuye"
+       console.log(firstName+" "+ lastName);      
+}
+printName();
+
+
+const express = require("express");
  const bodyParser = require("body-parser");
  const exphbs = require("express-handlebars");
  const path = require("path");
