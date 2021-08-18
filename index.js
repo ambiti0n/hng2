@@ -20,8 +20,8 @@
 
  app.post("/send", (req,res) => {
      console.log(req.body)
+     res.send("<h1> The Profile data from the Form input was successfully sent to the Server</h1>");
  })
-
 
  const PORT = process.env.PORT || 5001;
 
